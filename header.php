@@ -10,7 +10,6 @@
 
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-<link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php wp_head(); ?>
 </head>
@@ -18,7 +17,7 @@
 <body>
   <header>
     <div class="container">
-        <div class="inner">
+        <div class="col-md-12">
             <a class="blog-logo" href='<?php echo esc_url( home_url( '/' ) ); ?>' rel='home'>
               <?php bloginfo( 'name' ); ?>
             </a>
