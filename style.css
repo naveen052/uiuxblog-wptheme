@@ -1,192 +1,137 @@
 /**
-  Theme Name: Naked
-  Theme URI: http://code.google.com/p/wordpress-naked/
-  Version: 1.2
-  Author: Siftware
-  Author URI: http://www.siftware.co.uk
-  Tags: simple, clean, fixed width, widget-ready, widgets, right sidebar, two columns, valid XHTML, valid CSS, blank-slate
-  Licence: LGPL
-  
-  Description: A theme created with developers in mind which should enable rapid WP reskinning. The CSS is minimal but consistent cross-browser, there are a couple of SEO tweaks and the page navigation works sensibly but can modified easily.
-
-  The CSS that follows is the bare minimum of styling for a two column, fixed width and centred layout that should be
-  consistent in 'modern browsers'
+  Theme Name: UI/UX Blog
+  Theme URI: http://uiuxblog.com
+  Version: 1.0
+  Author: Naveen Singh
+  Author URI: http://naveensingh.net
+  The CSS that follows is the bare minimum of styling for a two column, fixed width and centred layout that should be consistent in 'modern browsers'
 */
 
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 html {
-  overflow-y: scroll;
+    height: 100%;
+    max-height: 100%;
+    font-size: 62.5%;
+}
+body {
+	font-family: "Merriweather", serif;
+    letter-spacing: 0.01rem;
+    font-size: 1.8rem;
+    line-height: 1.75em;
+    color: #3A4145;
+    -webkit-font-feature-settings: 'kern' 1;
+    -moz-font-feature-settings: 'kern' 1;
+    -o-font-feature-settings: 'kern' 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+p, nav, ul, li, label, table, small, td, tr {
+    font-family: "Merriweather", serif;
+    letter-spacing: 1px;
+ }
+strong, b {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+}
+h1, h2, h3,
+h4, h5, h6 {
+    -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+    -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+    -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+    color: #2E2E2E;
+    line-height: 1.15em;
+    margin: 0 0 0.4em 0;
+    font-family: "Open Sans", sans-serif;
 }
 
-body { }
-
-#canvas {
-  width: 768px;
-  margin: 0 auto;
+h1 {
+    font-size: 5rem;
+    letter-spacing: -2px;
+    text-indent: -3px;
 }
 
-#header {
-  margin: 0 0 10px 0;
-}
-  /** the heading and tagline are h1 on homepage and h4 on internal */
-  #header h1,
-  #header h4 {
-    font-size: 30px;
-    margin: 0;
-    padding: 10px 0 10px 0;
-  }
-    /** the tagline is a span within the h1 or h4 */
-    #header h1 span,
-    #header h4 span { }
-
-  /**
-    Nav and Subnav
-    Split these out if you want the two levels to look different
-  */
-  #nav,
-  #subNav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  #subNav {
-    margin-top: 10px;
-  }
-    #nav li,
-    #subNav li {
-      display: inline;
-      padding: 0 10px 0 0;
-    }
-    /* Currently selected page nav item (and parent) if applicable */
-    .current_page_item a,
-    .current_page_parent a {
-      text-decoration: none;
-    }
-      .current_page_item a:hover,
-      .current_page_parent a:hover {
-        text-decoration: underline;
-      }
-
-/**      main content     */
-#primaryContent {
-  width: 540px;
-  float: left;
-  padding: 0 20px 0 0;
-  margin: 0;
-}
-  #primaryContent h1 {
-    padding: 0;
-    margin: 10px 0 0 0;
-  }
-
-  #primaryContent h2 {
-    padding: 0;
-    margin: 10px 0 0 0;
-  }
-
-  /* titles are h2 on homepage and h1 for internal */
-  #primaryContent h1.postTitle,
-  #primaryContent h2.postTitle {
-    font-size: 22px;
-  }
-
-  #primaryContent h3 {
-    padding: 0;
-    margin: 10px 0 0 0;
-  }
-
-  ol#posts {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-    li.postWrapper,
-    div.postWrapper { }
-
-      .postWrapper img { }
-
-      div.post { }
-
-      p.postMeta { }
-
-  #pagination {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-  }
-    #pagination li {
-      display: inlne;
-    }
-    #pagination .previous {
-      text-align: left;
-      float: left;
-    }
-    #pagination .future {
-      text-align: right;
-      float: right;
-    }
-
-/**       sidebar          */
-#secondaryContent {
-  width: 200px;
-  float: left;
-}
-  #secondaryContent h3 {
-    padding: 0;
-    margin: 10px 0 0 0;
-  }
-
-  /**
-    Remove bullets from the first level sidebar UL and give each item some bottom margin.
-    IE 6 doesn't like the selectors, I can live with that but if you can't then
-    you'll need to extend this further.
-  */
-  #secondaryContent > ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-    #secondaryContent > ul > li {
-      margin: 0 0 10px 0;
-    }
-
-  /** the HTML is a bit dodgy for the tag cloud, need to add some padding
-      between the title and the first href */
-  .widget_tag_cloud a {
-    padding-left: 5px;
-  }
-
-#comment {
-  width: 500px;
+h2 {
+    font-size: 3.6rem;
+    letter-spacing: -1px;
 }
 
-#footer {
-  clear: both;
-  font-size: 80%;
+h3 {
+    font-size: 3rem;
 }
 
-/** normally hidden but will appear when css disabled */
-.skip,
-.noCss {
-  position: absolute;
-  left: -9999px;
+h4 {
+    font-size: 2.5rem;
 }
 
-/**
-  theme requirements as per 
-  http://codex.wordpress.org/CSS
-*/
-.aligncenter,
-div.aligncenter {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
+h5 {
+    font-size: 2rem;
 }
 
-.alignleft {
-   float: left;
+h6 {
+    font-size: 2rem;
 }
 
-.alignright {
-   float: right;
+a {
+    color: #4A4A4A;
+    transition: color ease 0.3s;
+}
+
+a:hover {
+    color: #111;
+}
+
+p, ul, ol, dl {
+    -webkit-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
+    -moz-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
+    -o-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
+    margin: 0 0 1.75em 0;
+}
+
+ol, ul {
+    padding-left: 3rem;
+}
+
+ol ol, ul ul,
+ul ol, ol ul {
+    margin: 0 0 0.4em 0;
+    padding-left: 2em;
 }
