@@ -1,19 +1,13 @@
-<?php
-
-  /**
-  *@desc Included at the bottom of post.php and single.php, deals with all comment layout
-  */
-
-  if ( !empty($post->post_password) && $_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password) :
+<?php  if ( !empty($post->post_password) && $_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password) :
 ?>
 <p><?php _e('Enter your password to view comments.'); ?></p>
 <?php return; endif; ?>
 
-<h2 id="comments"><?php comments_number(__('No Comments'), __('1 Comment'), __('% Comments')); ?>
+<h4 id="comments"><?php comments_number(__('No Comments'), __('1 Comment'), __('% Comments')); ?>
 <?php if ( comments_open() ) : ?>
 	<a href="#postcomment" title="<?php _e("Leave a comment"); ?>">&raquo;</a>
 <?php endif; ?>
-</h2>
+</h4>
 
 <?php if ( $comments ) : ?>
 <ol id="commentlist">
@@ -67,7 +61,7 @@
 
 <!--<p><small><strong>XHTML:</strong> <?php printf(__('You can use these tags: %s'), allowed_tags()); ?></small></p>-->
 
-<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+<p><textarea name="comment" id="comment" cols="80%" rows="10" tabindex="4"></textarea></p>
 
 <p><input name="submit" type="submit" id="submit" tabindex="5" value="<?php echo attribute_escape(__('Submit Comment')); ?>" />
 <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />

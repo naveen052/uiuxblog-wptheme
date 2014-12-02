@@ -81,7 +81,7 @@
     list-style: none;
 }
 .loop {
-    padding: 10px;
+    padding:0px 10px;
 }
 .posts-loop li {
     list-style: none;
@@ -111,8 +111,10 @@
     border: 1px solid #f2f2f2;
 }
 .post-wrapper {
-
     padding: 5px 15px;
+}
+.post-excerpt p {
+    margin: 0px;
 }
 .featured-image {
     text-align: center;
@@ -125,17 +127,20 @@
 .post-title {
     line-height: 0.7;
     margin: 0px;
-    letter-spacing: 0.5px;
 }
 .post-title a {
+    letter-spacing: 1px;
     font-size: 16px;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 600;
 }
 .post-excerpt {
     font-size: 12px;
     line-height: 1.8;
     margin:0px;
+}
+.post a {
+    padding-bottom: 5px;
 }
 /********************************************/
 /*             Sidebar Settings             */
@@ -160,17 +165,77 @@
 }
 .sidebar li {
     font-size: 13px;
+    padding: 5px 0px;
 }
 .sidebar a {
     text-decoration: none;
 }
 
 /********************************************/
+/*            Single Post Settings         */
+/*******************************************/
+.single-post-inner {
+    padding: 30px;
+    border: 1px solid #f2f2f2;
+}
+small a {
+    text-decoration: none;
+}
+.single-post-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f2f2f2;
+    margin-bottom: 20px;
+}
+
+.author {
+    position: relative;
+    margin: 4rem 0rem;
+    padding: 4rem 2rem 2rem 2rem;
+    border: #f2f2f2 5px solid;
+}
+.author p {
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    line-height: 1.75em;
+}
+.author a {
+    text-decoration: none;
+}
+.author-image {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    margin-left: -40px;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    overflow: hidden;
+    padding: 6px;
+    background: #fff;
+    z-index: 2;
+    box-shadow: #E7EEF2 0 0 0 1px;
+}
+.author-image img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 100%;
+}
+
+/********************************************/
 /*             Responsive Settings         */
 /*******************************************/
 @media screen and (max-width:1000px) {
-    .header-search-form .pull-right {
+    .page-header .pull-right {
         float: none!important;
+        text-align: center;
     }
     .header-search-form{
         width: 94%;

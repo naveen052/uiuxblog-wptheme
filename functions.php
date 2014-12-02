@@ -117,6 +117,13 @@ function will_paginate()
   return false;
 }
 
+/**
+ * Filters wp_title to print a neat <title> tag based on what is being viewed.
+ *
+ * @param string $title Default title text for current view.
+ * @param string $sep Optional separator.
+ * @return string The filtered title.
+ */
 
 
 ?>

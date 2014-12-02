@@ -45,7 +45,7 @@ html {
 body {
 	font-family: "Merriweather", serif;
     letter-spacing: 0.01rem;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 1.75em;
     color: #3A4145;
     -webkit-font-feature-settings: 'kern' 1;
@@ -67,6 +67,7 @@ table {
 p, nav, ul, li, label, table, small, td, tr {
     font-family: "Merriweather", serif;
     letter-spacing: 1px;
+    font-weight: 400;
  }
 strong, b {
     font-family: "Merriweather", serif;
@@ -78,6 +79,7 @@ h4, h5, h6 {
     -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     color: #2E2E2E;
+    font-weight: 300;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
     font-family: "Open Sans", sans-serif;
@@ -85,7 +87,6 @@ h4, h5, h6 {
 
 h1 {
     font-size: 5rem;
-    letter-spacing: -2px;
     text-indent: -3px;
 }
 
