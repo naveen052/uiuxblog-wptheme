@@ -33,9 +33,11 @@
             </nav>
           </div>
           <div class="col-md-3">
-            <form class="pull-right header-search-form" method="get" action="<?php bloginfo('home'); ?>">
-              <input placeholder="Type and hit enter" type="text" class="header-search-field" name="s" id="s" size="15" /><br />
+           <div class="clearfix header-search-form">
+            <form method="get" action="<?php bloginfo('home'); ?>">
+              <input placeholder="Type and hit enter" type="text" class="header-search-field" name="s" id="s" size="15" />
             </form>
+            </div>
           </div>
         </div>
       </div>

@@ -844,10 +844,10 @@ ul ol, ol ul {
     text-align: center;
 }
 .pull-right {
-  float: right !important;
+  float: right;
 }
 .pull-left {
-  float: left !important;
+  float: left;
 }
 .hide {
   display: none !important;
