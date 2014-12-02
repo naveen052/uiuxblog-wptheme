@@ -26,10 +26,12 @@
         <div class="post-excerpt">
             <?php the_excerpt(custom_excerpt_length, new_excerpt_more); ?>
         </div>
+    </div>
+    </div>
 </li>
 </article>
 <?php $counter++; if ($counter % 2 == 0) {
-  echo '</div><div class="ct-row">';
+  echo '</div><div class="single-row">';
 } endwhile; endif; ?>
 
 </div><!-- /row -->
@@ -37,6 +39,4 @@
     </div>
 
 
-  <?php
-  get_footer();
-?>
+  <?php  get_footer(); ?>
