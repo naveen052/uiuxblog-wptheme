@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="HandheldFriendly" content="True" />
 <meta name="MobileOptimized" content="320" />
-<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:300" />
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:300,700" />
 <link rel="stylesheet" href="http://localhost/wordpress/wp-content/themes/uiuxblog/assets/css/style.css">
 
 <title><?php wp_title( '|', true, 'right' ); ?></title>
