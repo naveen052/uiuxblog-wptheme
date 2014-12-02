@@ -1,0 +1,77 @@
+/********************************************/
+/*             Page Header                  */
+/*******************************************/
+
+.page-header {
+    width: 100%;
+    background: red;
+}
+.logo img {
+    margin-top: 10px;
+}
+.default-nav {
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+.default-nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+.default-nav li a {
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 5px;
+}
+.default-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.default-nav li:first-child:before {
+    content: '';
+}
+.default-nav li:before {
+    content: ' * ';
+    margin: 0px 5px;
+    color: #fff;
+}
+.header-search-form {
+    margin-top: 20px;
+    width: 80%;
+}
+.header-search-field {
+  width: 100%;
+    display: block;
+  background-color: transparent;
+  border:0px;
+  outline: 0px;
+  padding: 10px 5px 5px 5px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+    font-family: "Merriweather", serif;
+}
+
+
+.header-search-field::-webkit-input-placeholder {
+   color: #fff;
+
+}
+
+.header-search-field:-moz-placeholder { /* Firefox 18- */
+   color: #fff;
+}
+
+.header-search-field::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;
+}
+
+.header-search-field:-ms-input-placeholder {
+   color: #fff;
+}
+
+
+
+/********************************************/
+/*             Index Page Loop             */
+/*******************************************/
