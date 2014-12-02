@@ -21,6 +21,7 @@
     text-decoration: none;
     color: #fff;
     padding-bottom: 5px;
+    font-size: 12px;
 }
 .default-nav li a:hover {
     text-decoration: none;
@@ -32,8 +33,9 @@
     content: '';
 }
 .default-nav li:before {
-    content: ' * ';
+    content: "•";
     margin: 0px 5px;
+    font-size: 20px;
     color: #fff;
 }
 .header-search-form {
@@ -75,3 +77,59 @@
 /********************************************/
 /*             Index Page Loop             */
 /*******************************************/
+.post-wrapper {
+    list-style: none;
+}
+.loop {
+    padding: 10px;
+}
+.posts-loop li {
+    list-style: none;
+}
+.posts-loop {
+    padding: 0px;
+    margin: 0px;
+}
+.border {
+    border: 1px solid #f2f2f2;
+    height: 200px;
+}
+.single-loop-post {
+    padding: 5px;
+}
+.featured-image {
+    text-align: center;
+    padding: 10px
+}
+.featured-image img {
+    max-width: 100%;
+    height: auto;
+}
+.post-title {
+    margin:0px;
+    line-height: 0.8;
+}
+.post-title a {
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.post-excerpt {
+    font-size: 12px;
+    line-height: 1.8;
+}
+.article {
+    display: table-cell;
+    margin:1% ;
+    width: 48%;
+}
+/********************************************/
+/*             Sidebar Settings             */
+/*******************************************/
+
+.widget {
+    list-style: none;
+}
+.sidebar ul {
+    padding: 20px;
+}

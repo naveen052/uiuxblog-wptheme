@@ -1,7 +1,8 @@
-      </div>
 
-      <div id="secondaryContent">
-        <?php get_sidebar(); ?>
+      <div class="col-md-4 sidebar">
+        <div class="loop">
+            <?php get_sidebar(); ?>
+        </div>
       </div>
 
       <div id="footer">
