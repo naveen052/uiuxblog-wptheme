@@ -8,26 +8,25 @@
 
   if (have_posts()) : while (have_posts()) : the_post();
   ?>
-
-    <div class="postWrapper" id="post-<?php the_ID(); ?>">
-
-      <h1 class="postTitle"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-      <small><?php the_date(); ?> by <?php the_author(); ?></small>
-      <?php echo get_avatar( $comment, 32 ); ?>  
-      
+<div class="row">
+    <div class="col-md-12">
+    <div class="single-post-inner">
+    <article class="single-post-content">
+         <header class="single-post-header">
+          <h1 class="single-post-title">
+              <?php the_title(); ?>
+          </h1>
+          <small class="small">
+                  <?php the_date(); ?> by <?php the_author_posts_link(); ?>   </small> <br>
+      </header>
       <div class="post"><?php the_content(__('(more...)')); ?></div>
-      <p class="postMeta"><?php edit_post_link(__('Edit'), ''); ?></p>
-    </div>
-
   <?php
   comments_template();
 
   endwhile; else: ?>
-
     <p>Sorry, no pages matched your criteria.</p>
 
-<?php
-  endif;
-
-  get_footer();
-?>
+<?php endif; ?>
+</article>
+        </div> </div>
+<?php get_footer(); ?>

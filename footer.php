@@ -5,11 +5,11 @@
         </div>
       </div>
 
-      <div id="footer">
-        <?php wp_footer(); ?>
-      </div>
-      
     </div>
+      <footer class="clearfix">
+        <p>Lorem ipsum dolor sit amet</p>
+      </footer>
+
 
   </body>
 </html>

@@ -8,7 +8,8 @@
               <?php the_title(); ?>
           </h1>
           <small class="small">
-                  <?php the_date(); ?> by <?php the_author_posts_link(); ?>   </small> <br>
+                  <?php the_date(); ?> by <?php the_author_posts_link(); ?>
+          </small> <br>
         <small><b>Posted in : </b> <?php the_category(', '); ?></small>
       </header>
       <div class="post">
