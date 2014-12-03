@@ -45,7 +45,7 @@ html {
 body {
 	font-family: 'Roboto Slab', serif;
     font-size: 1.8rem;
-    line-height: 1.8;
+    line-height: 1.75em;
     color: #3A4145;
     -webkit-font-feature-settings: 'kern' 1;
     -moz-font-feature-settings: 'kern' 1;
@@ -79,6 +79,7 @@ h4, h5, h6 {
     -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     color: #2E2E2E;
     font-weight: 100;
+    line-height: 1.15em;
     margin: 0 0 0.4em 0;
     font-family: 'Roboto Slab', serif;
 }
@@ -143,7 +144,22 @@ ul ol, ol ul {
     margin: 0 0 0.4em 0;
     padding-left: 2em;
 }
-
+code, tt, pre {
+    font-family: Inconsolata,monospace,sans-serif;
+    font-size: .85em;
+    white-space: pre-wrap;
+    border: 1px solid #e3edf3;
+    border-radius: 2px;
+    background: #f7fafb;
+}
+code {
+    padding: 2px;
+}
+pre {
+    margin: 20px 0px;
+    padding: 15px;
+    overflow: auto;
+}
 /*!
  * Bootstrap v3.3.1 (http://getbootstrap.com)
  * Copyright 2011-2014 Twitter, Inc.
