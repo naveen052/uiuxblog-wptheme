@@ -10,6 +10,11 @@
 <title><?php if(is_home()) { echo bloginfo("name"); echo " | "; echo bloginfo("description"); } else { echo wp_title(" | ", false, right); echo bloginfo("name"); } ?></title>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<script src="http://localhost/wordpress/wp-content/themes/uiuxblog/assets/js/jquery.js"></script>
+<script type="text/javascript" src="http://localhost/wordpress/wp-content/themes/uiuxblog/assets/js/nprogress.js"></script>
+  <script type="text/javascript" src="http://localhost/wordpress/wp-content/themes/uiuxblog/assets/js/jquery.history.js"></script>
+  <script type="text/javascript" src="http://localhost/wordpress/wp-content/themes/uiuxblog/assets/js/scripts.js"></script>
+
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -1,12 +1,12 @@
 <?php get_header();?>
-<div class="col-md-8">
+<div class="col-md-8" id="ajax-container">
  <div class="post-loop-container">
  <div class="single-row">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <article class="single-article-in-loop" id="post-<?php the_ID(); ?>" role="article">
 <?php  if(has_post_thumbnail()) { ?>
     <div class="featured-image">
-          <a href="<?php the_permalink() ?>">
+          <a class="js-ajax-link"  href="<?php the_permalink() ?>">
             <?php the_post_thumbnail('');?>
 
           </a>
@@ -14,7 +14,7 @@
 <?php } ?>
 <li class="post-wrapper" id="post-<?php the_ID(); ?>">
 <h2 class="post-title">
-     <a href="<?php the_permalink() ?>" rel="bookmark">
+     <a class="js-ajax-link"  href="<?php the_permalink() ?>" rel="bookmark">
           <?php the_title(); ?>
       </a>
 </h2>

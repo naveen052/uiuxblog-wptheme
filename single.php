@@ -1,6 +1,6 @@
 <?php   get_header();   if (have_posts()) : while (have_posts()) : the_post();
   ?>
-<div class="col-md-8">
+<div class="col-md-8" id="ajax-container">
     <div class="single-post-inner">
      <article class="single-post-content">
          <header class="single-post-header">
