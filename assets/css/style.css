@@ -120,11 +120,11 @@
     max-width: 100%;
     height: auto;
 }
-.post-title {
-    line-height: 0.7;
+.post-title h2 {
+    line-height: 1.5;
     margin: 0px;
 }
-.post-title a {
+.post-title {
     letter-spacing: 1px;
     font-size: 16px;
     text-decoration: none;

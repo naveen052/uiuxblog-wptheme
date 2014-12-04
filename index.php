@@ -4,20 +4,18 @@
  <div class="single-row">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <article class="single-article-in-loop" id="post-<?php the_ID(); ?>" role="article">
+<li class="post-wrapper" id="post-<?php the_ID(); ?>">
 <?php  if(has_post_thumbnail()) { ?>
     <div class="featured-image">
           <a class="js-ajax-link"  href="<?php the_permalink() ?>">
             <?php the_post_thumbnail('');?>
-
           </a>
        </div>
 <?php } ?>
-<li class="post-wrapper" id="post-<?php the_ID(); ?>">
-<h2 class="post-title">
-     <a class="js-ajax-link"  href="<?php the_permalink() ?>" rel="bookmark">
-          <?php the_title(); ?>
-      </a>
+          <a class="post-title js-ajax-link"  href="<?php the_permalink() ?>" rel="bookmark">
+<h2 class="post-title"><?php the_title(); ?>
 </h2>
+      </a>
 <div class="row">
     <small><?php the_date(); ?> by <?php the_author();?></small>
         <div class="post-excerpt">
