@@ -1,3 +1,4 @@
+@import url('assets/css/style.css');
 /**
   Theme Name: UI/UX Blog
   Theme URI: http://uiuxblog.com
@@ -184,14 +185,9 @@ pre {
     width: 1170px;
   }
 }
-@media (min-width: 1300px) {
-  .container {
-    width: 1280px;
-  }
-}
 @media (min-width: 1500px) {
   .container {
-    width: 1470px;
+    width: 1370px;
   }
 }
 .container-fluid {

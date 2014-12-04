@@ -7,7 +7,11 @@
 
     </div>
       <footer class="clearfix">
-        <p>Lorem ipsum dolor sit amet</p>
+        <p class="pull-right"><a href="#">Something</a>
+        <a href="#">Something</a>
+        <a href="#">Something</a>
+        <a href="#">Something</a></p>
+        <p class="pull-left">// Lorem ipsum dolor sit amet</p>
       </footer>
 
 
