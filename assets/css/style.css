@@ -148,9 +148,13 @@
 .sidebar .widget {
     padding: 20px;
 }
+
 .sidebar-fixed {
     position: fixed;
     top: 0;
+}
+.sidebar .sidebar-fixed .widget:first-child {
+    padding: 0px 20px!important;
 }
 .sidebar ul {
     padding: 0px;
