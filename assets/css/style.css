@@ -38,8 +38,8 @@
     width: 80%;
 }
 .header-search-field {
-  width: 100%;
-    display: block;
+  width: 95%;
+  display: block;
   background-color: transparent;
   border:0px;
   outline: 0px;
@@ -105,7 +105,7 @@
 }
 .single-article-in-loop {
     background-color: #fff;
-    box-shadow: 1px 1px 1px 0px #f2f2f2;
+    box-shadow: 1px 1px 1px 1px #f2f2f2;
 }
 .post-wrapper {
     padding: 5px 15px;
@@ -147,6 +147,10 @@
 }
 .sidebar .widget {
     padding: 20px;
+}
+.sidebar-fixed {
+    position: fixed;
+    top: 0;
 }
 .sidebar ul {
     padding: 0px;
@@ -241,6 +245,10 @@ small a {
     .page-header .pull-right {
         float: none!important;
         text-align: center;
+    }
+    .sidebar-fixed {
+        position: relative;
+        top: 0;
     }
     .logo {
         text-align: center;
